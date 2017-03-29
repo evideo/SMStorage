@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E49756E71E8A9DC5004478BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E49756E61E8A9DC5004478BD /* main.m */; };
+		E49756EA1E8A9DC5004478BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E49756E91E8A9DC5004478BD /* AppDelegate.m */; };
+		E49756ED1E8A9DC5004478BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49756EC1E8A9DC5004478BD /* ViewController.m */; };
+		E49756F01E8A9DC5004478BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49756EE1E8A9DC5004478BD /* Main.storyboard */; };
+		E49756F21E8A9DC5004478BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49756F11E8A9DC5004478BD /* Assets.xcassets */; };
+		E49756F51E8A9DC5004478BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49756F31E8A9DC5004478BD /* LaunchScreen.storyboard */; };
+		E49757001E8A9DC5004478BD /* SMStorageExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E49756FF1E8A9DC5004478BD /* SMStorageExampleTests.m */; };
+		E49757131E8B47E1004478BD /* SMStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757121E8B47E1004478BD /* SMStorage.m */; };
+		E49757201E8B484B004478BD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757161E8B484B004478BD /* FMDatabase.m */; };
+		E49757211E8B484B004478BD /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757181E8B484B004478BD /* FMDatabaseAdditions.m */; };
+		E49757221E8B484B004478BD /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E497571A1E8B484B004478BD /* FMDatabasePool.m */; };
+		E49757231E8B484B004478BD /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E497571C1E8B484B004478BD /* FMDatabaseQueue.m */; };
+		E49757241E8B484B004478BD /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E497571F1E8B484B004478BD /* FMResultSet.m */; };
+		E49757271E8B6004004478BD /* SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757261E8B6004004478BD /* SMSQLGrammer.m */; };
+		E497572B1E8B9B4D004478BD /* NSString+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E497572A1E8B9B4D004478BD /* NSString+SMSQLGrammer.m */; };
+		E497572E1E8B9E84004478BD /* NSNumber+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E497572D1E8B9E84004478BD /* NSNumber+SMSQLGrammer.m */; };
+		E49757311E8B9F79004478BD /* NSDate+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757301E8B9F79004478BD /* NSDate+SMSQLGrammer.m */; };
+		E49757341E8B9F98004478BD /* NSValue+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757331E8B9F98004478BD /* NSValue+SMSQLGrammer.m */; };
+		E497573A1E8BF557004478BD /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757391E8BF557004478BD /* Student.m */; };
+		E497573D1E8BF628004478BD /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E497573C1E8BF628004478BD /* libsqlite3.0.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E49756FC1E8A9DC5004478BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E49756DA1E8A9DC5004478BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E49756E11E8A9DC5004478BD;
+			remoteInfo = SMStorageExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E49756E21E8A9DC5004478BD /* SMStorageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMStorageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49756E61E8A9DC5004478BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E49756E81E8A9DC5004478BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E49756E91E8A9DC5004478BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E49756EB1E8A9DC5004478BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E49756EC1E8A9DC5004478BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E49756EF1E8A9DC5004478BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E49756F11E8A9DC5004478BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E49756F41E8A9DC5004478BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E49756F61E8A9DC5004478BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49756FB1E8A9DC5004478BD /* SMStorageExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMStorageExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49756FF1E8A9DC5004478BD /* SMStorageExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMStorageExampleTests.m; sourceTree = "<group>"; };
+		E49757011E8A9DC5004478BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49757111E8B47E1004478BD /* SMStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStorage.h; sourceTree = "<group>"; };
+		E49757121E8B47E1004478BD /* SMStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStorage.m; sourceTree = "<group>"; };
+		E49757151E8B484B004478BD /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		E49757161E8B484B004478BD /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		E49757171E8B484B004478BD /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		E49757181E8B484B004478BD /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		E49757191E8B484B004478BD /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		E497571A1E8B484B004478BD /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		E497571B1E8B484B004478BD /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		E497571C1E8B484B004478BD /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		E497571D1E8B484B004478BD /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		E497571E1E8B484B004478BD /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		E497571F1E8B484B004478BD /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		E49757251E8B6004004478BD /* SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSQLGrammer.h; sourceTree = "<group>"; };
+		E49757261E8B6004004478BD /* SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSQLGrammer.m; sourceTree = "<group>"; };
+		E49757291E8B9B4D004478BD /* NSString+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SMSQLGrammer.h"; sourceTree = "<group>"; };
+		E497572A1E8B9B4D004478BD /* NSString+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SMSQLGrammer.m"; sourceTree = "<group>"; };
+		E497572C1E8B9E84004478BD /* NSNumber+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SMSQLGrammer.h"; sourceTree = "<group>"; };
+		E497572D1E8B9E84004478BD /* NSNumber+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SMSQLGrammer.m"; sourceTree = "<group>"; };
+		E497572F1E8B9F79004478BD /* NSDate+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SMSQLGrammer.h"; sourceTree = "<group>"; };
+		E49757301E8B9F79004478BD /* NSDate+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SMSQLGrammer.m"; sourceTree = "<group>"; };
+		E49757321E8B9F98004478BD /* NSValue+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+SMSQLGrammer.h"; sourceTree = "<group>"; };
+		E49757331E8B9F98004478BD /* NSValue+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+SMSQLGrammer.m"; sourceTree = "<group>"; };
+		E49757381E8BF557004478BD /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		E49757391E8BF557004478BD /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		E497573C1E8BF628004478BD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E49756DF1E8A9DC5004478BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E497573D1E8BF628004478BD /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E49756F81E8A9DC5004478BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E49756D91E8A9DC5004478BD = {
+			isa = PBXGroup;
+			children = (
+				E49756E41E8A9DC5004478BD /* SMStorageExample */,
+				E49756FE1E8A9DC5004478BD /* SMStorageExampleTests */,
+				E49756E31E8A9DC5004478BD /* Products */,
+				E497573B1E8BF628004478BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E49756E31E8A9DC5004478BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E49756E21E8A9DC5004478BD /* SMStorageExample.app */,
+				E49756FB1E8A9DC5004478BD /* SMStorageExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E49756E41E8A9DC5004478BD /* SMStorageExample */ = {
+			isa = PBXGroup;
+			children = (
+				E497570A1E8A9DDE004478BD /* SMStorage */,
+				E49756E81E8A9DC5004478BD /* AppDelegate.h */,
+				E49756E91E8A9DC5004478BD /* AppDelegate.m */,
+				E49756EB1E8A9DC5004478BD /* ViewController.h */,
+				E49756EC1E8A9DC5004478BD /* ViewController.m */,
+				E49757381E8BF557004478BD /* Student.h */,
+				E49757391E8BF557004478BD /* Student.m */,
+				E49756EE1E8A9DC5004478BD /* Main.storyboard */,
+				E49756F11E8A9DC5004478BD /* Assets.xcassets */,
+				E49756F31E8A9DC5004478BD /* LaunchScreen.storyboard */,
+				E49756F61E8A9DC5004478BD /* Info.plist */,
+				E49756E51E8A9DC5004478BD /* Supporting Files */,
+			);
+			path = SMStorageExample;
+			sourceTree = "<group>";
+		};
+		E49756E51E8A9DC5004478BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E49756E61E8A9DC5004478BD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E49756FE1E8A9DC5004478BD /* SMStorageExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E49756FF1E8A9DC5004478BD /* SMStorageExampleTests.m */,
+				E49757011E8A9DC5004478BD /* Info.plist */,
+			);
+			path = SMStorageExampleTests;
+			sourceTree = "<group>";
+		};
+		E497570A1E8A9DDE004478BD /* SMStorage */ = {
+			isa = PBXGroup;
+			children = (
+				E49757141E8B484B004478BD /* FMDB */,
+				E49757281E8B9B28004478BD /* Grammer */,
+				E49757111E8B47E1004478BD /* SMStorage.h */,
+				E49757121E8B47E1004478BD /* SMStorage.m */,
+				E49757251E8B6004004478BD /* SMSQLGrammer.h */,
+				E49757261E8B6004004478BD /* SMSQLGrammer.m */,
+			);
+			path = SMStorage;
+			sourceTree = "<group>";
+		};
+		E49757141E8B484B004478BD /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				E49757151E8B484B004478BD /* FMDatabase.h */,
+				E49757161E8B484B004478BD /* FMDatabase.m */,
+				E49757171E8B484B004478BD /* FMDatabaseAdditions.h */,
+				E49757181E8B484B004478BD /* FMDatabaseAdditions.m */,
+				E49757191E8B484B004478BD /* FMDatabasePool.h */,
+				E497571A1E8B484B004478BD /* FMDatabasePool.m */,
+				E497571B1E8B484B004478BD /* FMDatabaseQueue.h */,
+				E497571C1E8B484B004478BD /* FMDatabaseQueue.m */,
+				E497571D1E8B484B004478BD /* FMDB.h */,
+				E497571E1E8B484B004478BD /* FMResultSet.h */,
+				E497571F1E8B484B004478BD /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		E49757281E8B9B28004478BD /* Grammer */ = {
+			isa = PBXGroup;
+			children = (
+				E49757291E8B9B4D004478BD /* NSString+SMSQLGrammer.h */,
+				E497572A1E8B9B4D004478BD /* NSString+SMSQLGrammer.m */,
+				E497572C1E8B9E84004478BD /* NSNumber+SMSQLGrammer.h */,
+				E497572D1E8B9E84004478BD /* NSNumber+SMSQLGrammer.m */,
+				E497572F1E8B9F79004478BD /* NSDate+SMSQLGrammer.h */,
+				E49757301E8B9F79004478BD /* NSDate+SMSQLGrammer.m */,
+				E49757321E8B9F98004478BD /* NSValue+SMSQLGrammer.h */,
+				E49757331E8B9F98004478BD /* NSValue+SMSQLGrammer.m */,
+			);
+			path = Grammer;
+			sourceTree = "<group>";
+		};
+		E497573B1E8BF628004478BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E497573C1E8BF628004478BD /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E49756E11E8A9DC5004478BD /* SMStorageExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E49757041E8A9DC5004478BD /* Build configuration list for PBXNativeTarget "SMStorageExample" */;
+			buildPhases = (
+				E49756DE1E8A9DC5004478BD /* Sources */,
+				E49756DF1E8A9DC5004478BD /* Frameworks */,
+				E49756E01E8A9DC5004478BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMStorageExample;
+			productName = SMStorageExample;
+			productReference = E49756E21E8A9DC5004478BD /* SMStorageExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E49756FA1E8A9DC5004478BD /* SMStorageExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E49757071E8A9DC5004478BD /* Build configuration list for PBXNativeTarget "SMStorageExampleTests" */;
+			buildPhases = (
+				E49756F71E8A9DC5004478BD /* Sources */,
+				E49756F81E8A9DC5004478BD /* Frameworks */,
+				E49756F91E8A9DC5004478BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E49756FD1E8A9DC5004478BD /* PBXTargetDependency */,
+			);
+			name = SMStorageExampleTests;
+			productName = SMStorageExampleTests;
+			productReference = E49756FB1E8A9DC5004478BD /* SMStorageExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E49756DA1E8A9DC5004478BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = smallmuou;
+				TargetAttributes = {
+					E49756E11E8A9DC5004478BD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 444Y5T8EK3;
+						ProvisioningStyle = Automatic;
+					};
+					E49756FA1E8A9DC5004478BD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 444Y5T8EK3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E49756E11E8A9DC5004478BD;
+					};
+				};
+			};
+			buildConfigurationList = E49756DD1E8A9DC5004478BD /* Build configuration list for PBXProject "SMStorageExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E49756D91E8A9DC5004478BD;
+			productRefGroup = E49756E31E8A9DC5004478BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E49756E11E8A9DC5004478BD /* SMStorageExample */,
+				E49756FA1E8A9DC5004478BD /* SMStorageExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E49756E01E8A9DC5004478BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49756F51E8A9DC5004478BD /* LaunchScreen.storyboard in Resources */,
+				E49756F21E8A9DC5004478BD /* Assets.xcassets in Resources */,
+				E49756F01E8A9DC5004478BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E49756F91E8A9DC5004478BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E49756DE1E8A9DC5004478BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49757271E8B6004004478BD /* SMSQLGrammer.m in Sources */,
+				E49756ED1E8A9DC5004478BD /* ViewController.m in Sources */,
+				E497573A1E8BF557004478BD /* Student.m in Sources */,
+				E49757311E8B9F79004478BD /* NSDate+SMSQLGrammer.m in Sources */,
+				E497572E1E8B9E84004478BD /* NSNumber+SMSQLGrammer.m in Sources */,
+				E49757131E8B47E1004478BD /* SMStorage.m in Sources */,
+				E49756EA1E8A9DC5004478BD /* AppDelegate.m in Sources */,
+				E49757201E8B484B004478BD /* FMDatabase.m in Sources */,
+				E49757341E8B9F98004478BD /* NSValue+SMSQLGrammer.m in Sources */,
+				E49757241E8B484B004478BD /* FMResultSet.m in Sources */,
+				E49756E71E8A9DC5004478BD /* main.m in Sources */,
+				E49757221E8B484B004478BD /* FMDatabasePool.m in Sources */,
+				E497572B1E8B9B4D004478BD /* NSString+SMSQLGrammer.m in Sources */,
+				E49757211E8B484B004478BD /* FMDatabaseAdditions.m in Sources */,
+				E49757231E8B484B004478BD /* FMDatabaseQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E49756F71E8A9DC5004478BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49757001E8A9DC5004478BD /* SMStorageExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E49756FD1E8A9DC5004478BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E49756E11E8A9DC5004478BD /* SMStorageExample */;
+			targetProxy = E49756FC1E8A9DC5004478BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E49756EE1E8A9DC5004478BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E49756EF1E8A9DC5004478BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E49756F31E8A9DC5004478BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E49756F41E8A9DC5004478BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E49757021E8A9DC5004478BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E49757031E8A9DC5004478BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E49757051E8A9DC5004478BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 444Y5T8EK3;
+				INFOPLIST_FILE = SMStorageExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.smallmuou.SMStorageExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E49757061E8A9DC5004478BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 444Y5T8EK3;
+				INFOPLIST_FILE = SMStorageExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.smallmuou.SMStorageExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E49757081E8A9DC5004478BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 444Y5T8EK3;
+				INFOPLIST_FILE = SMStorageExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.smallmuou.SMStorageExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMStorageExample.app/SMStorageExample";
+			};
+			name = Debug;
+		};
+		E49757091E8A9DC5004478BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 444Y5T8EK3;
+				INFOPLIST_FILE = SMStorageExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.smallmuou.SMStorageExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMStorageExample.app/SMStorageExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E49756DD1E8A9DC5004478BD /* Build configuration list for PBXProject "SMStorageExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E49757021E8A9DC5004478BD /* Debug */,
+				E49757031E8A9DC5004478BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E49757041E8A9DC5004478BD /* Build configuration list for PBXNativeTarget "SMStorageExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E49757051E8A9DC5004478BD /* Debug */,
+				E49757061E8A9DC5004478BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E49757071E8A9DC5004478BD /* Build configuration list for PBXNativeTarget "SMStorageExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E49757081E8A9DC5004478BD /* Debug */,
+				E49757091E8A9DC5004478BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E49756DA1E8A9DC5004478BD /* Project object */;
+}
