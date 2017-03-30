@@ -27,7 +27,7 @@ Student stu;
 [Student sms_clear:nil]
 
 ```
-PS: 『一行搞定』可谓是傻瓜化的最高境界.
+PS: 『一行搞定』可谓是现阶段傻瓜化的最高境界.
 
 
 ### 进价
@@ -39,11 +39,23 @@ PS: 『一行搞定』可谓是傻瓜化的最高境界.
 [Student sms_read:@"where name='张三'" completion:^(NSArray* objects){
 	...
 }]
+
+//设置主键，如不允许学生编号重复
+[Student sms_setPrimaryKey:@"code"];
 ```
 
 ### 注意项
 目前并没有支持所有数据类型，支持类型如下
 
+- [x] 基础类型 int、float、short、double、NSInteger、NSUInteger、BOOL ...
 - [x] NSString
 - [x] NSDate
-
+- [x] NSNumber
+- [x] CGPoint
+- [x] CGSize
+- [x] CGRect
+- [x] CGVector
+- [x] CGAffineTransform
+- [x] UIEdgeInsets
+- [x] UIOffset
+- [x] NSRange
