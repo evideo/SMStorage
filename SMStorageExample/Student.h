@@ -8,11 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Student : NSObject
+@interface People : NSObject
 
-@property (nonatomic, strong) NSString* code;
 @property (nonatomic, strong) NSString*  name;
 @property (nonatomic, assign) int age;
+
+@end
+
+
+@interface Student : People {
+    NSString* _test;
+    double flag;
+}
+
++ (instancetype)student;
+
+@property (nonatomic, strong) NSString* code;
 @property (nonatomic, strong) NSString* schoolName;
 
 @end

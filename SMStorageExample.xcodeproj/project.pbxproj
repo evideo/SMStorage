@@ -14,19 +14,19 @@
 		E49756F21E8A9DC5004478BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49756F11E8A9DC5004478BD /* Assets.xcassets */; };
 		E49756F51E8A9DC5004478BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49756F31E8A9DC5004478BD /* LaunchScreen.storyboard */; };
 		E49757001E8A9DC5004478BD /* SMStorageExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E49756FF1E8A9DC5004478BD /* SMStorageExampleTests.m */; };
-		E49757131E8B47E1004478BD /* SMStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757121E8B47E1004478BD /* SMStorage.m */; };
-		E49757201E8B484B004478BD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757161E8B484B004478BD /* FMDatabase.m */; };
-		E49757211E8B484B004478BD /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757181E8B484B004478BD /* FMDatabaseAdditions.m */; };
-		E49757221E8B484B004478BD /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E497571A1E8B484B004478BD /* FMDatabasePool.m */; };
-		E49757231E8B484B004478BD /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E497571C1E8B484B004478BD /* FMDatabaseQueue.m */; };
-		E49757241E8B484B004478BD /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E497571F1E8B484B004478BD /* FMResultSet.m */; };
-		E49757271E8B6004004478BD /* SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757261E8B6004004478BD /* SMSQLGrammer.m */; };
-		E497572B1E8B9B4D004478BD /* NSString+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E497572A1E8B9B4D004478BD /* NSString+SMSQLGrammer.m */; };
-		E497572E1E8B9E84004478BD /* NSNumber+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E497572D1E8B9E84004478BD /* NSNumber+SMSQLGrammer.m */; };
-		E49757311E8B9F79004478BD /* NSDate+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757301E8B9F79004478BD /* NSDate+SMSQLGrammer.m */; };
-		E49757341E8B9F98004478BD /* NSValue+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757331E8B9F98004478BD /* NSValue+SMSQLGrammer.m */; };
 		E497573A1E8BF557004478BD /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757391E8BF557004478BD /* Student.m */; };
 		E497573D1E8BF628004478BD /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E497573C1E8BF628004478BD /* libsqlite3.0.tbd */; };
+		E49757581E8C16B9004478BD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757411E8C16B9004478BD /* FMDatabase.m */; };
+		E49757591E8C16B9004478BD /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757431E8C16B9004478BD /* FMDatabaseAdditions.m */; };
+		E497575A1E8C16B9004478BD /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757451E8C16B9004478BD /* FMDatabasePool.m */; };
+		E497575B1E8C16B9004478BD /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757471E8C16B9004478BD /* FMDatabaseQueue.m */; };
+		E497575C1E8C16B9004478BD /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E497574A1E8C16B9004478BD /* FMResultSet.m */; };
+		E497575D1E8C16B9004478BD /* NSDate+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E497574D1E8C16B9004478BD /* NSDate+SMSQLGrammer.m */; };
+		E497575E1E8C16B9004478BD /* NSNumber+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E497574F1E8C16B9004478BD /* NSNumber+SMSQLGrammer.m */; };
+		E497575F1E8C16B9004478BD /* NSString+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757511E8C16B9004478BD /* NSString+SMSQLGrammer.m */; };
+		E49757601E8C16B9004478BD /* NSValue+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757531E8C16B9004478BD /* NSValue+SMSQLGrammer.m */; };
+		E49757611E8C16B9004478BD /* SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757551E8C16B9004478BD /* SMSQLGrammer.m */; };
+		E49757621E8C16B9004478BD /* SMStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757571E8C16B9004478BD /* SMStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,32 +53,32 @@
 		E49756FB1E8A9DC5004478BD /* SMStorageExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMStorageExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49756FF1E8A9DC5004478BD /* SMStorageExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMStorageExampleTests.m; sourceTree = "<group>"; };
 		E49757011E8A9DC5004478BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E49757111E8B47E1004478BD /* SMStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStorage.h; sourceTree = "<group>"; };
-		E49757121E8B47E1004478BD /* SMStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStorage.m; sourceTree = "<group>"; };
-		E49757151E8B484B004478BD /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		E49757161E8B484B004478BD /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		E49757171E8B484B004478BD /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		E49757181E8B484B004478BD /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		E49757191E8B484B004478BD /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		E497571A1E8B484B004478BD /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		E497571B1E8B484B004478BD /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		E497571C1E8B484B004478BD /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		E497571D1E8B484B004478BD /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		E497571E1E8B484B004478BD /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		E497571F1E8B484B004478BD /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		E49757251E8B6004004478BD /* SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSQLGrammer.h; sourceTree = "<group>"; };
-		E49757261E8B6004004478BD /* SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSQLGrammer.m; sourceTree = "<group>"; };
-		E49757291E8B9B4D004478BD /* NSString+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SMSQLGrammer.h"; sourceTree = "<group>"; };
-		E497572A1E8B9B4D004478BD /* NSString+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SMSQLGrammer.m"; sourceTree = "<group>"; };
-		E497572C1E8B9E84004478BD /* NSNumber+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SMSQLGrammer.h"; sourceTree = "<group>"; };
-		E497572D1E8B9E84004478BD /* NSNumber+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SMSQLGrammer.m"; sourceTree = "<group>"; };
-		E497572F1E8B9F79004478BD /* NSDate+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SMSQLGrammer.h"; sourceTree = "<group>"; };
-		E49757301E8B9F79004478BD /* NSDate+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SMSQLGrammer.m"; sourceTree = "<group>"; };
-		E49757321E8B9F98004478BD /* NSValue+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+SMSQLGrammer.h"; sourceTree = "<group>"; };
-		E49757331E8B9F98004478BD /* NSValue+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+SMSQLGrammer.m"; sourceTree = "<group>"; };
 		E49757381E8BF557004478BD /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		E49757391E8BF557004478BD /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		E497573C1E8BF628004478BD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		E49757401E8C16B9004478BD /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		E49757411E8C16B9004478BD /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		E49757421E8C16B9004478BD /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		E49757431E8C16B9004478BD /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		E49757441E8C16B9004478BD /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		E49757451E8C16B9004478BD /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		E49757461E8C16B9004478BD /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		E49757471E8C16B9004478BD /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		E49757481E8C16B9004478BD /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		E49757491E8C16B9004478BD /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		E497574A1E8C16B9004478BD /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		E497574C1E8C16B9004478BD /* NSDate+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SMSQLGrammer.h"; sourceTree = "<group>"; };
+		E497574D1E8C16B9004478BD /* NSDate+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SMSQLGrammer.m"; sourceTree = "<group>"; };
+		E497574E1E8C16B9004478BD /* NSNumber+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SMSQLGrammer.h"; sourceTree = "<group>"; };
+		E497574F1E8C16B9004478BD /* NSNumber+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SMSQLGrammer.m"; sourceTree = "<group>"; };
+		E49757501E8C16B9004478BD /* NSString+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SMSQLGrammer.h"; sourceTree = "<group>"; };
+		E49757511E8C16B9004478BD /* NSString+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SMSQLGrammer.m"; sourceTree = "<group>"; };
+		E49757521E8C16B9004478BD /* NSValue+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+SMSQLGrammer.h"; sourceTree = "<group>"; };
+		E49757531E8C16B9004478BD /* NSValue+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+SMSQLGrammer.m"; sourceTree = "<group>"; };
+		E49757541E8C16B9004478BD /* SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSQLGrammer.h; sourceTree = "<group>"; };
+		E49757551E8C16B9004478BD /* SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSQLGrammer.m; sourceTree = "<group>"; };
+		E49757561E8C16B9004478BD /* SMStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStorage.h; sourceTree = "<group>"; };
+		E49757571E8C16B9004478BD /* SMStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +103,7 @@
 		E49756D91E8A9DC5004478BD = {
 			isa = PBXGroup;
 			children = (
+				E497573E1E8C16B9004478BD /* SMStorage */,
 				E49756E41E8A9DC5004478BD /* SMStorageExample */,
 				E49756FE1E8A9DC5004478BD /* SMStorageExampleTests */,
 				E49756E31E8A9DC5004478BD /* Products */,
@@ -122,7 +123,6 @@
 		E49756E41E8A9DC5004478BD /* SMStorageExample */ = {
 			isa = PBXGroup;
 			children = (
-				E497570A1E8A9DDE004478BD /* SMStorage */,
 				E49756E81E8A9DC5004478BD /* AppDelegate.h */,
 				E49756E91E8A9DC5004478BD /* AppDelegate.m */,
 				E49756EB1E8A9DC5004478BD /* ViewController.h */,
@@ -155,58 +155,58 @@
 			path = SMStorageExampleTests;
 			sourceTree = "<group>";
 		};
-		E497570A1E8A9DDE004478BD /* SMStorage */ = {
-			isa = PBXGroup;
-			children = (
-				E49757141E8B484B004478BD /* FMDB */,
-				E49757281E8B9B28004478BD /* Grammer */,
-				E49757111E8B47E1004478BD /* SMStorage.h */,
-				E49757121E8B47E1004478BD /* SMStorage.m */,
-				E49757251E8B6004004478BD /* SMSQLGrammer.h */,
-				E49757261E8B6004004478BD /* SMSQLGrammer.m */,
-			);
-			path = SMStorage;
-			sourceTree = "<group>";
-		};
-		E49757141E8B484B004478BD /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				E49757151E8B484B004478BD /* FMDatabase.h */,
-				E49757161E8B484B004478BD /* FMDatabase.m */,
-				E49757171E8B484B004478BD /* FMDatabaseAdditions.h */,
-				E49757181E8B484B004478BD /* FMDatabaseAdditions.m */,
-				E49757191E8B484B004478BD /* FMDatabasePool.h */,
-				E497571A1E8B484B004478BD /* FMDatabasePool.m */,
-				E497571B1E8B484B004478BD /* FMDatabaseQueue.h */,
-				E497571C1E8B484B004478BD /* FMDatabaseQueue.m */,
-				E497571D1E8B484B004478BD /* FMDB.h */,
-				E497571E1E8B484B004478BD /* FMResultSet.h */,
-				E497571F1E8B484B004478BD /* FMResultSet.m */,
-			);
-			path = FMDB;
-			sourceTree = "<group>";
-		};
-		E49757281E8B9B28004478BD /* Grammer */ = {
-			isa = PBXGroup;
-			children = (
-				E49757291E8B9B4D004478BD /* NSString+SMSQLGrammer.h */,
-				E497572A1E8B9B4D004478BD /* NSString+SMSQLGrammer.m */,
-				E497572C1E8B9E84004478BD /* NSNumber+SMSQLGrammer.h */,
-				E497572D1E8B9E84004478BD /* NSNumber+SMSQLGrammer.m */,
-				E497572F1E8B9F79004478BD /* NSDate+SMSQLGrammer.h */,
-				E49757301E8B9F79004478BD /* NSDate+SMSQLGrammer.m */,
-				E49757321E8B9F98004478BD /* NSValue+SMSQLGrammer.h */,
-				E49757331E8B9F98004478BD /* NSValue+SMSQLGrammer.m */,
-			);
-			path = Grammer;
-			sourceTree = "<group>";
-		};
 		E497573B1E8BF628004478BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				E497573C1E8BF628004478BD /* libsqlite3.0.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E497573E1E8C16B9004478BD /* SMStorage */ = {
+			isa = PBXGroup;
+			children = (
+				E497573F1E8C16B9004478BD /* FMDB */,
+				E497574B1E8C16B9004478BD /* Grammer */,
+				E49757541E8C16B9004478BD /* SMSQLGrammer.h */,
+				E49757551E8C16B9004478BD /* SMSQLGrammer.m */,
+				E49757561E8C16B9004478BD /* SMStorage.h */,
+				E49757571E8C16B9004478BD /* SMStorage.m */,
+			);
+			path = SMStorage;
+			sourceTree = "<group>";
+		};
+		E497573F1E8C16B9004478BD /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				E49757401E8C16B9004478BD /* FMDatabase.h */,
+				E49757411E8C16B9004478BD /* FMDatabase.m */,
+				E49757421E8C16B9004478BD /* FMDatabaseAdditions.h */,
+				E49757431E8C16B9004478BD /* FMDatabaseAdditions.m */,
+				E49757441E8C16B9004478BD /* FMDatabasePool.h */,
+				E49757451E8C16B9004478BD /* FMDatabasePool.m */,
+				E49757461E8C16B9004478BD /* FMDatabaseQueue.h */,
+				E49757471E8C16B9004478BD /* FMDatabaseQueue.m */,
+				E49757481E8C16B9004478BD /* FMDB.h */,
+				E49757491E8C16B9004478BD /* FMResultSet.h */,
+				E497574A1E8C16B9004478BD /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		E497574B1E8C16B9004478BD /* Grammer */ = {
+			isa = PBXGroup;
+			children = (
+				E497574C1E8C16B9004478BD /* NSDate+SMSQLGrammer.h */,
+				E497574D1E8C16B9004478BD /* NSDate+SMSQLGrammer.m */,
+				E497574E1E8C16B9004478BD /* NSNumber+SMSQLGrammer.h */,
+				E497574F1E8C16B9004478BD /* NSNumber+SMSQLGrammer.m */,
+				E49757501E8C16B9004478BD /* NSString+SMSQLGrammer.h */,
+				E49757511E8C16B9004478BD /* NSString+SMSQLGrammer.m */,
+				E49757521E8C16B9004478BD /* NSValue+SMSQLGrammer.h */,
+				E49757531E8C16B9004478BD /* NSValue+SMSQLGrammer.m */,
+			);
+			path = Grammer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,21 +313,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E49757271E8B6004004478BD /* SMSQLGrammer.m in Sources */,
 				E49756ED1E8A9DC5004478BD /* ViewController.m in Sources */,
+				E497575B1E8C16B9004478BD /* FMDatabaseQueue.m in Sources */,
+				E49757611E8C16B9004478BD /* SMSQLGrammer.m in Sources */,
+				E497575E1E8C16B9004478BD /* NSNumber+SMSQLGrammer.m in Sources */,
+				E49757601E8C16B9004478BD /* NSValue+SMSQLGrammer.m in Sources */,
 				E497573A1E8BF557004478BD /* Student.m in Sources */,
-				E49757311E8B9F79004478BD /* NSDate+SMSQLGrammer.m in Sources */,
-				E497572E1E8B9E84004478BD /* NSNumber+SMSQLGrammer.m in Sources */,
-				E49757131E8B47E1004478BD /* SMStorage.m in Sources */,
+				E497575F1E8C16B9004478BD /* NSString+SMSQLGrammer.m in Sources */,
+				E497575D1E8C16B9004478BD /* NSDate+SMSQLGrammer.m in Sources */,
 				E49756EA1E8A9DC5004478BD /* AppDelegate.m in Sources */,
-				E49757201E8B484B004478BD /* FMDatabase.m in Sources */,
-				E49757341E8B9F98004478BD /* NSValue+SMSQLGrammer.m in Sources */,
-				E49757241E8B484B004478BD /* FMResultSet.m in Sources */,
+				E49757581E8C16B9004478BD /* FMDatabase.m in Sources */,
+				E497575A1E8C16B9004478BD /* FMDatabasePool.m in Sources */,
+				E49757621E8C16B9004478BD /* SMStorage.m in Sources */,
+				E497575C1E8C16B9004478BD /* FMResultSet.m in Sources */,
 				E49756E71E8A9DC5004478BD /* main.m in Sources */,
-				E49757221E8B484B004478BD /* FMDatabasePool.m in Sources */,
-				E497572B1E8B9B4D004478BD /* NSString+SMSQLGrammer.m in Sources */,
-				E49757211E8B484B004478BD /* FMDatabaseAdditions.m in Sources */,
-				E49757231E8B484B004478BD /* FMDatabaseQueue.m in Sources */,
+				E49757591E8C16B9004478BD /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

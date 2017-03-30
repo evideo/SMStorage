@@ -110,6 +110,7 @@ static NSMutableDictionary* variablesCache;
     } while(clazz && strcmp(object_getClassName(clazz), "NSObject"));
     
     variablesCache[key] = variables;
+    NSLog(@"variable: %@", variables);
     return variables;
 }
 
@@ -186,7 +187,6 @@ static NSMutableDictionary* lowercaseVariablesCache;
     BOOL beAssignPrimaryKey = YES;
     
     NSDictionary* variables = [clazz sms_variables];
-    NSLog(@"var=%@", variables);
     NSDictionary* typeMapper = [clazz sms_typeMapper];
     
     BOOL first = YES;
@@ -224,7 +224,6 @@ static NSMutableDictionary* lowercaseVariablesCache;
     for (NSString* var in [variables allKeys]) {
         NSArray* map = typeMapper[variables[var]];
         if (!map) continue;
-        NSLog(@"======%@======%@", var, exceptColumns);
         if (!exceptColumns[var]) {
             [array addObject:[NSString stringWithFormat:@"ALTER TABLE %@ ADD %@ %@", tableName, var, map[SMS_SQLTypeIndex]]];
         }

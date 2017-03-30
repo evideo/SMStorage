@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "SMStorage.h"
 
 @interface SMStorageExampleTests : XCTestCase
 

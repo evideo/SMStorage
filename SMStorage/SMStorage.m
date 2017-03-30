@@ -14,6 +14,52 @@
 #error SMStorage must be compiled with ARC. Convert your project to ARC or specify the -fobjc-arc flag.
 #endif
 
+NSString* SMStorageVersionString = @"1.0.0";
+
+
+#pragma mark - NSObject (SMStorage)
+
+@implementation NSObject (SMStorage)
+
+static NSMutableDictionary* primaryKeyCache = nil;
++ (void)sms_setPrimaryKey:(NSString* )variable {
+    NSAssert([self sms_hasVariable:variable], @"%@ does not contain variable ", NSStringFromClass([self class]), variable);
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        primaryKeyCache = [NSMutableDictionary dictionary];
+    });
+    
+    primaryKeyCache[NSStringFromClass([self class])] = variable;
+}
+
++ (NSString* )sms_primaryKey {
+    return primaryKeyCache[NSStringFromClass([self class])];
+}
+
++ (void)sms_read:(NSString* )condition completion:(void(^)(NSArray* objects))completion {
+    [[SMStorage defaultStorage] readFromClass:[self class] condition:condition completion:completion];
+}
+
++ (void)sms_delete:(NSString* )condition completion:(void(^)())completion {
+    [[SMStorage defaultStorage] deleteFromClass:[self class] condition:condition completion:completion];
+}
+
++ (void)sms_clear:(void(^)())completion {
+    [[SMStorage defaultStorage] clearFromClass:[self class] completion:completion];
+}
+
+- (void)sms_write:(void(^)())completion {
+    [[SMStorage defaultStorage] writeObject:self completion:completion];
+}
+
+- (void)sms_delete:(void(^)())completion {
+    [[SMStorage defaultStorage] deleteObject:self completion:completion];
+}
+
+@end
+
+#pragma mark - SMStorage
+
 @interface SMStorage () {
     FMDatabaseQueue*    _fmdbQueue;
     dispatch_queue_t    _queue;
@@ -252,39 +298,3 @@
 
 @end
 
-#pragma mark - NSObject (SMStorage)
-
-@implementation NSObject (SMStorage)
-
-static NSMutableDictionary* primaryKeyCache = nil;
-+ (void)sms_setPrimaryKey:(NSString* )variable {
-    NSAssert([self sms_hasVariable:variable], @"%@ does not contain variable ", NSStringFromClass([self class]), variable);
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        primaryKeyCache = [NSMutableDictionary dictionary];
-    });
-    
-    primaryKeyCache[NSStringFromClass([self class])] = variable;
-}
-
-+ (NSString* )sms_primaryKey {
-    return primaryKeyCache[NSStringFromClass([self class])];
-}
-
-+ (void)sms_read:(NSString* )condition completion:(void(^)(NSArray* objects))completion {
-    [[SMStorage defaultStorage] readFromClass:[self class] condition:condition completion:completion];
-}
-
-+ (void)sms_delete:(NSString* )condition completion:(void(^)())completion {
-    [[SMStorage defaultStorage] deleteFromClass:[self class] condition:condition completion:completion];
-}
-
-+ (void)sms_clear:(void(^)())completion {
-    [[SMStorage defaultStorage] clearFromClass:[self class] completion:completion];
-}
-
-- (void)sms_write:(void(^)())completion {
-    [[SMStorage defaultStorage] writeObject:self completion:completion];
-}
-
-@end
