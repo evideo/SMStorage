@@ -44,6 +44,6 @@ PS: 『一行搞定』可谓是傻瓜化的最高境界.
 ### 注意项
 目前并没有支持所有数据类型，支持类型如下
 
-[x] NSString
-[x] NSDate
+- [x] NSString
+- [x] NSDate
 
