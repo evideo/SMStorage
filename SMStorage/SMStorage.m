@@ -200,6 +200,10 @@ static NSMutableDictionary* primaryKeyCache = nil;
                 for (NSString* col in columns) {
                     NSString* var = [clazz sms_variableOfLowercaseVariable:col];
                     Class cls = [clazz sms_classOfVariable:var];
+                    NSString *customClassName = [clazz sms_objectTypeOfVariable:var];
+                    if (!cls && [NSClassFromString(customClassName) respondsToSelector:@selector(sms_objectForSQL:objectType:)]) {
+                        cls = NSClassFromString(customClassName);
+                    }
                     id value = [cls sms_objectForSQL:[rs stringForColumn:col] objectType:[clazz sms_objectTypeOfVariable:var]];
                     if (cls && value) {
                         [obj setValue:value forKey:var];

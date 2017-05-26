@@ -7,7 +7,25 @@
 //
 
 #import "Student.h"
+#import "NSObject+ObjectMap.h"
 
+
+@implementation School
+
+
++ (instancetype)sms_objectForSQL:(NSString* )sql objectType:(NSString* )type {
+    NSData *data = [sql dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    School *school = [School objectOfClass:NSStringFromClass([School class]) fromJSON:json];
+    return school;
+}
+
+- (NSString* )sms_sqlValue {
+    NSString *string = [self JSONString];
+    return [NSString stringWithFormat:@"'%@'", [string stringByReplacingOccurrencesOfString:@"'" withString:@"''"]];
+}
+
+@end
 
 @implementation People
 

@@ -192,7 +192,15 @@ static NSMutableDictionary* lowercaseVariablesCache;
     BOOL first = YES;
     for (NSString* var in [variables allKeys]) {
         NSArray* map = typeMapper[variables[var]];
-        if (!map) continue;
+        if (!map) {
+            NSString *className = variables[var];
+            Class classVar = NSClassFromString(className);
+            if ([classVar instancesRespondToSelector:@selector(sms_sqlValue)]) {
+                map = @[className, @"TEXT"];
+            } else {
+                continue;
+            }
+        }
         
         if (!first) [columns appendString:@","];
         first = NO;
@@ -223,7 +231,15 @@ static NSMutableDictionary* lowercaseVariablesCache;
     
     for (NSString* var in [variables allKeys]) {
         NSArray* map = typeMapper[variables[var]];
-        if (!map) continue;
+        if (!map) {
+            NSString *className = variables[var];
+            Class classVar = NSClassFromString(className);
+            if ([classVar instancesRespondToSelector:@selector(sms_sqlValue)]) {
+                map = @[className, @"TEXT"];
+            } else {
+                continue;
+            }
+        }
         if (!exceptColumns[var]) {
             [array addObject:[NSString stringWithFormat:@"ALTER TABLE %@ ADD %@ %@", tableName, var, map[SMS_SQLTypeIndex]]];
         }
@@ -242,7 +258,15 @@ static NSMutableDictionary* lowercaseVariablesCache;
     BOOL first = YES;
     for (NSString* var in [varables allKeys]) {
         NSArray* map = typeMapper[varables[var]];
-        if (!map) continue;
+        if (!map) {
+            NSString *className = varables[var];
+            Class classVar = NSClassFromString(className);
+            if ([classVar respondsToSelector:@selector(sms_sqlValue)]) {
+                map = @[className, @"TEXT"];
+            } else {
+                continue;
+            }
+        }
         
         NSString* value = [[object valueForKey:var] sms_sqlValue];
         if (value) {
@@ -283,7 +307,15 @@ static NSMutableDictionary* lowercaseVariablesCache;
         
         for (NSString* var in [variables allKeys]) {
             NSArray* map = typeMapper[variables[var]];
-            if (!map) continue;
+            if (!map) {
+                NSString *className = variables[var];
+                Class classVar = NSClassFromString(className);
+                if ([classVar respondsToSelector:@selector(sms_sqlValue)]) {
+                    map = @[className, @"TEXT"];
+                } else {
+                    continue;
+                }
+            }
             
             NSString* value = [[(NSObject*)object valueForKey:var] sms_sqlValue];
             if (value) {

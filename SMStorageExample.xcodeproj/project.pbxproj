@@ -27,6 +27,8 @@
 		E49757601E8C16B9004478BD /* NSValue+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757531E8C16B9004478BD /* NSValue+SMSQLGrammer.m */; };
 		E49757611E8C16B9004478BD /* SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757551E8C16B9004478BD /* SMSQLGrammer.m */; };
 		E49757621E8C16B9004478BD /* SMStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = E49757571E8C16B9004478BD /* SMStorage.m */; };
+		F975981E1ED6C9A100E5FB1A /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = F975981D1ED6C9A100E5FB1A /* NSObject+ObjectMap.m */; };
+		F99FAAC91ED70B8A00D32806 /* NSDictionary+SMSQLGrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = F99FAAC81ED70B8A00D32806 /* NSDictionary+SMSQLGrammer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		E49757551E8C16B9004478BD /* SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSQLGrammer.m; sourceTree = "<group>"; };
 		E49757561E8C16B9004478BD /* SMStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStorage.h; sourceTree = "<group>"; };
 		E49757571E8C16B9004478BD /* SMStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStorage.m; sourceTree = "<group>"; };
+		F975981C1ED6C9A100E5FB1A /* NSObject+ObjectMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ObjectMap.h"; sourceTree = "<group>"; };
+		F975981D1ED6C9A100E5FB1A /* NSObject+ObjectMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObjectMap.m"; sourceTree = "<group>"; };
+		F99FAAC71ED70B8A00D32806 /* NSDictionary+SMSQLGrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SMSQLGrammer.h"; sourceTree = "<group>"; };
+		F99FAAC81ED70B8A00D32806 /* NSDictionary+SMSQLGrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SMSQLGrammer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,8 @@
 		E49756E41E8A9DC5004478BD /* SMStorageExample */ = {
 			isa = PBXGroup;
 			children = (
+				F975981C1ED6C9A100E5FB1A /* NSObject+ObjectMap.h */,
+				F975981D1ED6C9A100E5FB1A /* NSObject+ObjectMap.m */,
 				E49756E81E8A9DC5004478BD /* AppDelegate.h */,
 				E49756E91E8A9DC5004478BD /* AppDelegate.m */,
 				E49756EB1E8A9DC5004478BD /* ViewController.h */,
@@ -205,6 +213,8 @@
 				E49757511E8C16B9004478BD /* NSString+SMSQLGrammer.m */,
 				E49757521E8C16B9004478BD /* NSValue+SMSQLGrammer.h */,
 				E49757531E8C16B9004478BD /* NSValue+SMSQLGrammer.m */,
+				F99FAAC71ED70B8A00D32806 /* NSDictionary+SMSQLGrammer.h */,
+				F99FAAC81ED70B8A00D32806 /* NSDictionary+SMSQLGrammer.m */,
 			);
 			path = Grammer;
 			sourceTree = "<group>";
@@ -258,7 +268,7 @@
 				TargetAttributes = {
 					E49756E11E8A9DC5004478BD = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 444Y5T8EK3;
+						DevelopmentTeam = 5ZDZ2RA37W;
 						ProvisioningStyle = Automatic;
 					};
 					E49756FA1E8A9DC5004478BD = {
@@ -318,8 +328,10 @@
 				E49757611E8C16B9004478BD /* SMSQLGrammer.m in Sources */,
 				E497575E1E8C16B9004478BD /* NSNumber+SMSQLGrammer.m in Sources */,
 				E49757601E8C16B9004478BD /* NSValue+SMSQLGrammer.m in Sources */,
+				F99FAAC91ED70B8A00D32806 /* NSDictionary+SMSQLGrammer.m in Sources */,
 				E497573A1E8BF557004478BD /* Student.m in Sources */,
 				E497575F1E8C16B9004478BD /* NSString+SMSQLGrammer.m in Sources */,
+				F975981E1ED6C9A100E5FB1A /* NSObject+ObjectMap.m in Sources */,
 				E497575D1E8C16B9004478BD /* NSDate+SMSQLGrammer.m in Sources */,
 				E49756EA1E8A9DC5004478BD /* AppDelegate.m in Sources */,
 				E49757581E8C16B9004478BD /* FMDatabase.m in Sources */,
@@ -461,10 +473,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 444Y5T8EK3;
+				DEVELOPMENT_TEAM = 5ZDZ2RA37W;
 				INFOPLIST_FILE = SMStorageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.smallmuou.SMStorageExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashoka.SMStorageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -473,10 +485,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 444Y5T8EK3;
+				DEVELOPMENT_TEAM = 5ZDZ2RA37W;
 				INFOPLIST_FILE = SMStorageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.smallmuou.SMStorageExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashoka.SMStorageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -526,6 +538,7 @@
 				E49757061E8A9DC5004478BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E49757071E8A9DC5004478BD /* Build configuration list for PBXNativeTarget "SMStorageExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +547,7 @@
 				E49757091E8A9DC5004478BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

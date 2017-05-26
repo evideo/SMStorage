@@ -7,6 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SMSQLGrammer.h"
+
+
+@interface School : NSObject
+
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *address;
+
+@end
 
 @interface People : NSObject
 
@@ -25,5 +34,11 @@
 
 @property (nonatomic, strong) NSString* code;
 @property (nonatomic, strong) NSString* schoolName;
+
+@property (nonatomic, strong) School *school;
+
+@property (nonatomic, strong) NSDictionary *testDict;
+
+
 
 @end

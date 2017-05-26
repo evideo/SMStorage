@@ -31,14 +31,15 @@
     stu.name = @"xu";
     stu.age = 12;
     stu.schoolName = @"No. 22";
-    
+    stu.testDict = @{@"1":@"11"};
+    stu.school = [School new];
+    stu.school.name = @"fzu";
+    stu.school.address = @"minhou,fuzhou";
     [stu sms_write:^{
         [Student sms_read:nil completion:^(NSArray *objects) {
             NSLog(@"array=%@", objects);
         }];
     }];
-    
-    
     return YES;
 }
 
