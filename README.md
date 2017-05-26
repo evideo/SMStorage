@@ -48,7 +48,7 @@ PS:『一行搞定』可谓是傻瓜化的最高境界.
 
 * 1. 目前并没有支持所有数据类型，支持类型如下
 
-- [x] 基础类型 int、float、short、double、NSInteger、NSUInteger、BOOL ...
+- [x] 基础类型 int、float、short、double、NSInteger、NSUInteger、BOOL, NSDictionary(里面的value类型需为基础类型(json)) ...
 - [x] NSString
 - [x] NSDate
 - [x] NSNumber
@@ -60,6 +60,14 @@ PS:『一行搞定』可谓是傻瓜化的最高境界.
 - [x] UIEdgeInsets
 - [x] UIOffset
 - [x] NSRange
+
+如果属性为自定义类型，且该类型实现了
+```
+- (NSString* )sms_sqlValue
++ (instancetype)sms_objectForSQL:(NSString* )sql objectType:(NSString* )type
+
+```
+这两个方法，也可以存储
 
 * 2. 主键的意义
 
