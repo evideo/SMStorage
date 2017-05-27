@@ -21,23 +21,37 @@
     // Override point for customization after application launch.
 //    [Student sms_clear:nil];
     [Student sms_setPrimaryKey:@"code"];
-//    [Student sms_read:nil completion:^(NSArray *objects) {
-//        NSLog(@"array=%@", objects);
-//    }];
-//    return YES;
     
-    Student* stu = [[Student alloc] init];
-    stu.code = @"001";
-    stu.name = @"xu";
-    stu.age = 12;
-    stu.schoolName = @"No. 22";
-    stu.testDict = @{@"1":@"11"};
-    stu.school = [School new];
-    stu.school.name = @"fzu";
-    stu.school.address = @"minhou,fuzhou";
-    [stu sms_write:^{
+    NSMutableArray *array = [NSMutableArray array];
+    for (int i = 0; i < 10000; i ++) {
+        Student* stu = [[Student alloc] init];
+        stu.code = [NSString stringWithFormat:@"%d", i+1];
+        stu.name = @"xu";
+        stu.age = 12;
+        stu.schoolName = @"No. 22";
+        stu.testDict = @{@"1":@"11"};
+        stu.school = [School new];
+        stu.school.name = @"FZU";
+        stu.school.address = @"Fuzhou, FuJian, CN";
+        Teacher *teacher = [Teacher new];
+        teacher.name = @"Warren";
+        teacher.age = 44;
+        teacher.address = @"CA, USA";
+        stu.teacher = teacher;
+        [array addObject:stu];
+    }
+    NSDate *time1 = [NSDate date];
+    [[SMStorage defaultStorage] writeObject:array completion:^{
+        double timeCost = [[NSDate date] timeIntervalSinceDate:time1];
+        NSLog(@"write time cost:%f s", timeCost);
+        NSDate *time2 = [NSDate date];
         [Student sms_read:nil completion:^(NSArray *objects) {
-            NSLog(@"array=%@", objects);
+            double timeCost2 = [[NSDate date] timeIntervalSinceDate:time2];
+            NSLog(@"read time cost:%f s", timeCost2);
+            for (Student *item in objects) {
+                NSLog(@"%@", item);
+                
+            }
         }];
     }];
     return YES;

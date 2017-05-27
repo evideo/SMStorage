@@ -495,7 +495,7 @@ static const char * getPropertyType(objc_property_t property) {
 
 -(NSString *)JSONString{
     NSDictionary *dict = [NSObject dictionaryWithPropertiesOfObject:self];
-    NSData *JSONData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:nil];
+    NSData *JSONData = [NSJSONSerialization dataWithJSONObject:dict options:0 error:nil];
     return [[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding];
 }
 

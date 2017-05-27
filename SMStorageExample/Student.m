@@ -25,6 +25,10 @@
     return [NSString stringWithFormat:@"'%@'", [string stringByReplacingOccurrencesOfString:@"'" withString:@"''"]];
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"name:%@ address:%@", self.name, self.address];
+}
+
 @end
 
 @implementation People
@@ -49,6 +53,47 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"code=%@, name=%@, age=%d, school=%@, test=%@, flag=%f", self.code, self.name, self.age, self.schoolName, _test, flag];
+    return [NSString stringWithFormat:@"code=%@, name=%@, age=%d, school=%@, test=%@, flag=%f teacher=%@", self.code, self.name, self.age, self.school, _test, flag, self.teacher];
 }
+@end
+
+@implementation Teacher
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.name forKey:@"name"];
+    [aCoder encodeObject:self.address forKey:@"address"];
+    [aCoder encodeInteger:self.age forKey:@"age"];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self.name = [aDecoder decodeObjectForKey:@"name"];
+    self.age = [aDecoder decodeIntegerForKey:@"age"];
+    self.address = [aDecoder decodeObjectForKey:@"address"];
+    return self;
+}
+
+- (NSString *)sms_sqlValue {
+    //json
+//    return  [[self JSONString] sms_sqlValue];
+    //Base64
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self];
+    NSString *base64Str = [data base64EncodedStringWithOptions:0];
+    return [base64Str sms_sqlValue];
+}
+
++ (instancetype)sms_objectForSQL:(NSString *)sql objectType:(NSString *)type {
+    //json
+//    NSData *data1 = [sql dataUsingEncoding:NSUTF8StringEncoding];
+//    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data1 options:NSJSONReadingMutableContainers error:nil];
+//    return [Teacher objectOfClass:NSStringFromClass([Teacher class]) fromJSON:json];
+    //base64
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:sql options:0];
+    Teacher *teacher = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    return teacher;
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"(name:%@ age:%ld, address:%@)", self.name, self.age, self.address];
+}
+
 @end

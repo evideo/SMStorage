@@ -285,10 +285,13 @@ static NSMutableDictionary* primaryKeyCache = nil;
         [self inTransaction:^(FMDatabase *db, BOOL *rollback) {
             for (NSObject* obj in objects) {
                 [self updateTableInfo:[obj class] database:db];
-                if (![self writeObject:object database:db]) {
+                if (![self writeObject:obj database:db]) {
                     *rollback = YES;
                     break;
                 }
+            }
+            if (completion) {
+                completion();
             }
         }];
     } else {
