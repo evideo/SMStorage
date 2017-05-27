@@ -1,0 +1,66 @@
+base64
+
+iphone 5
+
+write time cost:11.149794 s
+read time cost:16.870665 s
+
+
+write time cost:13.667672 s
+read time cost:17.020203 s
+
+
+write time cost:10.996132 s
+read time cost:16.834987 s
+
+
+iphone 6P
+
+write time cost:3.952450 s
+read time cost:5.379645 s
+
+write time cost:4.736613 s
+read time cost:5.278633 s
+
+write time cost:4.671016 s
+read time cost:5.406304 s
+
+write time cost:4.966141 s
+read time cost:5.342001 s
+
+
+
+
+
+------------------------------------------------
+
+
+json
+
+iphone 5
+
+write time cost:8.972272 s
+read time cost:17.325382 s
+
+
+write time cost:8.981788 s
+read time cost:17.492092 s
+
+
+
+iphone6P
+
+write time cost:4.017109 s
+read time cost:5.797329 s
+
+write time cost:3.965176 s
+read time cost:5.560192 s
+
+write time cost:4.864537 s
+read time cost:5.409401 s
+
+
+write time cost:4.002353 s
+read time cost:5.495265 s
+
+
